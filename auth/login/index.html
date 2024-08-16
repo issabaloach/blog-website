@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/60/60736.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+</head>
+<body class="bg-white text-black flex items-center justify-center min-h-screen bg-gray-100">
+
+    <div class="w-full max-w-sm mx-auto overflow-hidden rounded-lg shadow-md">
+        <div class="px-6 py-4">
+            <div class="flex justify-center mx-auto">
+                <img class="w-auto h-7 sm:h-8" src="/logo/logo.jpg" alt="Logo">
+            </div>
+    
+            <h3 class="mt-3 text-xl font-medium text-center text-black">Welcome Back</h3>
+    
+            <p class="mt-1 text-center text-black">Login or create account</p>
+    
+            <form id="login_form">
+                <div class="w-full mt-4">
+                    <input id="email" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 border rounded-lg focus:border-blue-400 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="email" placeholder="Email Address" aria-label="Email Address" />
+                </div>
+    
+                <div class="w-full mt-4">
+                    <input id="password" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 border rounded-lg focus:border-blue-400 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="password" placeholder="Password" aria-label="Password" />
+                </div>
+    
+                <div class="flex items-center justify-between mt-4">
+                    <a href="#" class="text-sm text-gray-400 hover:text-gray-300">Forget Password?</a>
+    
+                    <button type="submit" class="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                        Sign In
+                    </button>
+                </div>
+            </form>
+        </div>
+    
+        <div class="flex items-center justify-center py-4 text-center bg-white">
+            <span class="text-sm text-gray-400">Don't have an account? </span>
+    
+            <a href="/auth/signup/index.html" class="mx-2 text-sm font-bold text-blue-400 hover:underline">Register</a>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
